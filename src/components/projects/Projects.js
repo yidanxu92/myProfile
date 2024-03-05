@@ -58,7 +58,7 @@ const Project = () => {
   }, [fetchRepos]);
 
   return (
-    <div id="projects" className="bg-light m-0">
+    <div id="projects" style={{ backgroundColor: "#fffaf4" }}>
       <div className="py-3">
         <div className="container py-5">
         <h2 className="display-4 pb-5 text-center">Recent Projects</h2>

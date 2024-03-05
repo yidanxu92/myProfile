@@ -17,6 +17,7 @@ const ProjectCard = ({value}) => {
 
       const cardStyle = {
         transition: 'transform 0.3s, box-shadow 0.3s',
+        color: '#8892b0',
     };
 
     const hoverStyle = {
@@ -27,12 +28,12 @@ const ProjectCard = ({value}) => {
 
     return (
         <Col md={6}>
-            <Card className="card shadow-lg p-3 mb-5 bg-white rounded"
+            <Card className="card shadow-lg p-3 mb-5 bg-white rounded" 
             
             style={cardStyle}
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}>
-                <Card.Body style={hover ? hoverStyle : {}}>
+                <Card.Body  style={hover ? hoverStyle : {}}>
                     <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
                     <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
                     {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}

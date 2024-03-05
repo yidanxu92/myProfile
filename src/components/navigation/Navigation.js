@@ -12,6 +12,7 @@ const Navigation  = () =>{
       <Nav className='mr-auto'> 
         <Nav.Link href={process.env.PUBLIC_URL + "/#about"}>About</Nav.Link>
         <Nav.Link href={process.env.PUBLIC_URL + "/#projects"}>Projects</Nav.Link>
+        <Nav.Link href={process.env.PUBLIC_URL + "/#skills"}>Skills</Nav.Link>
       </Nav>  
     </Navbar>
 

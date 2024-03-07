@@ -4,6 +4,8 @@ import Navigation from './components/navigation/Navigation';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';  
 import Skill from './components/skills/Skills'; 
+import Top from './components/top/Top'; 
+import GetInTouch from './components/getInTouch/GetInTouch';
 
 const App = () => { 
   const titleRef = React.useRef();
@@ -17,14 +19,19 @@ const App = () => {
         exact 
         element={
           <>
-           <About />
-           <Projects />
-           <Skill /> 
+          <Top />
+          <About />
+          <Projects />
+          <Skill /> 
+          <GetInTouch />
+    
           </>
       
         }
         />
         </Routes> 
+        
+
     </BrowserRouter>
 
   )

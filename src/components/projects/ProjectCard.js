@@ -3,6 +3,8 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import axios from "axios";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const ProjectCard = ({value}) => {
     const [hover, setHover] = useState(false); 
@@ -61,10 +63,11 @@ const CardButtons = ({ svn_url }) => {
           href={`${svn_url}/archive/master.zip`}
           className="btn btn-outline-secondary mx-2"
         >
-          <i className="fab fa-github" /> Clone Project
+           
+          <FontAwesomeIcon icon={faGithub} /> Clone Project
         </a>
         <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
-          <i className="fab fa-github" /> Repo
+            <FontAwesomeIcon icon={faGithub} />  Repo
         </a>
       </div>
     );
@@ -149,7 +152,7 @@ const CardButtons = ({ svn_url }) => {
           className="text-dark text-decoration-none"
         >
           <span className="text-dark card-link mr-4">
-            <i className="fab fa-github" /> Stars{" "}
+            <FontAwesomeIcon icon={faGithub} />  Stars{" "}
             <span className="badge badge-dark">{star_count}</span>
           </span>
         </a>

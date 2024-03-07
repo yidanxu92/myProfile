@@ -41,7 +41,7 @@ const Skills = React.forwardRef(({techSkill,techStack }, ref)  => {
     }, [isScrolled]);
 
     return (
-        <div className="m-0" id="skills" style={{ backgroundColor: "#fffaf4" }}>
+        <div className="m-0" id="skills" style={{ backgroundColor: "#fefbe9" }}>
             <Container className="p-5"> 
             <h2 className="display-4 text-center pb-5">Skills</h2>
             <Tabs className="Skills-tabs" defaultActiveKey="techSkill" id="skills-tabs" ref={ref} fill >

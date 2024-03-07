@@ -6,7 +6,7 @@ const About = () =>{
   
     
         return(
-            <div id="aboutme" className="py-3 m-0" style={{ backgroundColor: "#fffaf4" }}>
+            <div id="aboutme" className="py-3 m-0" style={{ backgroundColor: "#fefbe9" }}>
                 <div className="container py-5">
                  <div className="container row">
                     <div className="col-5 d-none d-lg-block align-self-center"></div>
@@ -14,6 +14,17 @@ const About = () =>{
                     <div className={'col-lg-12'}>
                         <h2 className="display-4 mb-5 text-center" >About Me</h2>
                         <p className="lead text-center" >My name is Yidan Xu.</p>
+                        <p className="lead text-center">
+                            <a
+                            className="btn btn-outline-dark btn-lg"
+                            href="../../YidanXuResume.pdf"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            role="button"
+                            aria-label="Resume/CV">
+                                Resume
+                                </a>
+                                </p>
                         </div>
                         </div>  
                         </div>  

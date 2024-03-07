@@ -9,7 +9,8 @@ const Top = () => {
     return (
         <div id="top"
         className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0" 
-        style={{ background:`url("rivendall.avif")`}}>
+        style={{ background:`url("rivendall.avif")`,backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",}}>
             <div id="stars"></div>
             <Container className="text-center">
                 <h1 className="display-1">Yidan Xu</h1>
